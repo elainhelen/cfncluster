@@ -23,7 +23,7 @@ import socket
 import logging
 
 from . import cfnconfig
-
+logger = logging.getLogger('cfncluster.cfncluster')
 def version(args):
     config = cfnconfig.CfnClusterConfig(args)
     print(config.version)
